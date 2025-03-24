@@ -1,6 +1,7 @@
-import { createGlobalStyle } from "styled-components";
+import React from "react";
+import { createGlobalStyle, DefaultTheme } from "styled-components";
 
-export const GlobalStyle = createGlobalStyle`
+export const GlobalStyle = createGlobalStyle<{ theme?: DefaultTheme }>`
   :root{
     --pink: #E31F71;
     --black: #212121;
@@ -115,4 +116,4 @@ export const GlobalStyle = createGlobalStyle`
     //   color: var(--green);
     // }
   }
-`
+` as React.ComponentType;

@@ -61,7 +61,7 @@ export const Container = styled.section`
     }
   }
   
-`
+` as React.ComponentType;
 /* old one - 2/1/2023 - 
 @media(max-width: 960px){
     .contacts{
