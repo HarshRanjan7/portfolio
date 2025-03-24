@@ -53,7 +53,7 @@ export const Container = styled.div`
       }
     }
   }
-`as React.ComponentType;
+`
 
 
 export const ContainerSucces = styled.div`
@@ -68,4 +68,4 @@ export const ContainerSucces = styled.div`
     text-align: center;
     color: #fbfbfb;
   }
-`as React.ComponentType;
+`

@@ -7,7 +7,7 @@ import { Form } from "../Form/Form";
 export function Contact(){
 
   return(
-    <Container >
+    <Container> 
       <div id="contact">
       <header>
         <h2>Contact</h2>
