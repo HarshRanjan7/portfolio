@@ -1,29 +1,33 @@
 import styled from "styled-components";
 
-
-export const Container = styled.section`
+export const Container = styled.div.attrs(() => ({
+  role: "contentinfo",
+}))<React.HTMLAttributes<HTMLDivElement>>`
   margin-top: 10rem;
 
-  header{
+  header {
     text-align: center;
-    h2{
+
+    h2 {
       text-align: center;
       font-size: 4rem;
     }
-    p{
+
+    p {
       color: var(--green);
       font-weight: 500;
     }
   }
 
-  .contacts{
+  .contacts {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 2rem;
     place-items: center;
     margin-top: 1.5rem;
-    div{
+
+    div {
       display: flex;
       align-items: center;
       justify-content: center;
@@ -34,42 +38,33 @@ export const Container = styled.section`
       border-radius: 1.4rem;
       padding: 1.6rem 2.8rem;
       transition: background-color 0.25s;
-      img{
+
+      img {
         width: 4rem;
       }
-      a{
+
+      a {
         color: var(--black);
         font-weight: 500;
       }
-      &:hover{
+
+      &:hover {
         background-color: var(--pink);
-        a{
-          color: #FFF;
+
+        a {
+          color: #fff;
         }
       }
     }
   }
 
-
-  @media(max-width: 960px){
-    .contacts{
+  @media (max-width: 960px) {
+    .contacts {
       flex-direction: column;
-      div{
+
+      div {
         width: 100%;
-        
       }
     }
   }
-  
-` as React.ComponentType;
-/* old one - 2/1/2023 - 
-@media(max-width: 960px){
-    .contacts{
-      flex-direction: column;
-      div{
-        width: 100%;
-        flex-direction: column;
-      }
-    }
-
-*/
+`;
