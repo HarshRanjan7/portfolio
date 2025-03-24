@@ -22,4 +22,4 @@ export const Container = styled.main`
   @media(max-width: 360px){
     padding: 0 2rem;
   }
-`
+`as React.ComponentType;

@@ -7,7 +7,8 @@ import { Form } from "../Form/Form";
 export function Contact(){
 
   return(
-    <Container id="contact">
+    <Container >
+      <div id="contact">
       <header>
         <h2>Contact</h2>
         <p>Ready to get started on your project? </p>
@@ -24,6 +25,7 @@ export function Contact(){
         </div>  
       </div>
       <Form></Form>
+      </div>
     </Container>
   )
 }
